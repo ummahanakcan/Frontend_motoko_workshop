@@ -1,29 +1,21 @@
 {
   "canisters": {
-    "internet_identity": {
-      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
-      "frontend": {},
-      "remote": {
-        "id": {
-          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
-        }
-      },
-      "type": "custom",
-      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
-    },
-    "motoko_rocks_backend": {
-      "main": "src/motoko_rocks_backend/main.mo",
+    "street_animals_backend": {
+      "main": "src/street_animals_backend/main.mo",
       "type": "motoko"
     },
-    "motoko_rocks_frontend": {
+    "street_animals_frontend": {
       "dependencies": [
-        "motoko_rocks_backend"
+        "street_animals_backend"
       ],
+      "frontend": {
+        "entrypoint": "src/street_animals_frontend/src/index.html"
+      },
       "source": [
-        "src/motoko_rocks_frontend/dist"
+        "src/street_animals_frontend/assets",
+        "src/street_animals_frontend/src"
       ],
-      "type": "assets",
-      "workspace": "motoko_rocks_frontend"
+      "type": "assets"
     }
   },
   "defaults": {
@@ -32,6 +24,5 @@
       "packtool": ""
     }
   },
-  "output_env_file": ".env",
   "version": 1
 }
