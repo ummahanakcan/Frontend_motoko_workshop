@@ -1,0 +1,119 @@
+/* Genel ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Hayvan Listesi Bölümü */
+.animal-list {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.animal-list h2 {
+    margin-bottom: 1rem;
+}
+
+.animal-list ul {
+    list-style-type: none;
+}
+
+.animal-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.animal-list li:last-child {
+    border-bottom: none;
+}
+
+/* Rapor Formu Bölümü */
+.report-form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.report-form h2 {
+    margin-bottom: 1rem;
+}
+
+.report-form label {
+    font-weight: bold;
+}
+
+.report-form input, 
+.report-form select, 
+.report-form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.report-form button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.report-form button:hover {
+    background-color: #e55b4d;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsive Düzen */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
